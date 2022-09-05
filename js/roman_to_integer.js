@@ -28,7 +28,7 @@ function romanToInteger(roman) {
 		return 'Error in your input'
 	}
 
-	for (i = 0; i < str.length; i++) {
+	for (let i = 0; i < str.length; i++) {
 		switch (true) { // i know passing true directly it's weird, but i think it get's better in switch than in if/else
 			case (str[i] === 'I' && str[i + 1] === 'V'): {
 				num += 4
